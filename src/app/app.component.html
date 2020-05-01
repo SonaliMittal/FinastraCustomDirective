@@ -1,0 +1,15 @@
+<div class="container-fluid" appCountReset>
+  
+  <!-- Include header -->
+  <app-header></app-header>
+  <div class="container mt-5">
+  <!-- Include Directive -->
+  <h3>Angular Directive that count on the widget displayed in the UI and reset the count to 1 when clicked on Reset
+    button.</h3>
+  <h1 id="elementCount"></h1>
+  <button appCountReset id="resetOne" type="button" class="btn btn-primary" (clickDirective)="resetValue()">Reset</button>
+  <!-- lazy loading outlet -->
+</div>
+    <router-outlet></router-outlet>
+  
+</div>
